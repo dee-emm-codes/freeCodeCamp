@@ -1,0 +1,227 @@
+:root {
+  --white: #FFF;
+  --text: #696969;
+  --pink: D0B2B2;
+  --black: #000;
+  --text1: FF0909;
+}
+
+* {
+  margin: 0;
+  scroll-behaviour: smooth;
+}
+
+body {
+  background-color: var(--pink);
+}
+
+#header-img {
+  width: 100px;
+  object-fit: contain;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--white);
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0 10px;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.the-product {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-family: "dancing script";
+}
+
+#email-section {
+  margin-top: 150px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+#submit {
+  background-color: var(--black); 
+  color: var(--white);
+  cursor: pointer;
+}
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+}
+
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "dancing script";
+  margin-bottom: 10px;
+}
+
+
+.icon {
+  color: var(--black);
+  margin-right: 30px;
+}
+
+#features {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: "fraunces";
+}
+
+#video {
+  width: 100%;
+}
+
+.product-image {
+  width: 100%;
+  margin: auto;
+  height: 700px;
+  border: 1px solid var(--text);
+  border-radius: 10px 10px 10px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product1 {
+  background-image: url("https://www.virginiarosecandleco.com/cdn/shop/files/LavenderLovewithLid.jpg?v=1694655835&width=823");
+}
+
+.product2 {
+  background-image: url("https://www.virginiarosecandleco.com/cdn/shop/files/FreshCutRoseswithLid.jpg?v=1694655753&width=823");
+}
+
+.product3 {
+  background-image: url(https://www.virginiarosecandleco.com/cdn/shop/files/RiseandShinewithLid1.jpg?v=1694655937&width=823)
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.inner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.content {
+  font-family: "fraunces";
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-price {
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: "fraunces";
+  color: var(--text1);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--text);
+}
+
+.maker {
+  font-family: "fraunces";
+  letter-spacing: 5px;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.header {
+  font-family: "fraunces";
+  margin: 10px 0;
+  color: var(--black);
+}
+
+.add {
+  background-color: var(--black);
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  color: var(--white);
+  font-family: "fraunces";
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  @nav-bar {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (450px < width < 600px) {
+  .card {
+    font-size: 0.85rem;
+  }
+
+  .product-image {
+    height: 400px;
+  }
+}
+
+@media only screen and (width>=1000px) {
+  #video {
+    width: 70%;
+  }
+  .product-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
